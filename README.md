@@ -202,6 +202,7 @@ Crie um arquivo urls.py dentro da sua aplicação (minha_app/) para organizar as
 # Navegue para a pasta da sua aplicação (minha_app/)
 cd minha_app
 
+```bash
 # minha_app/urls.py
 from django.urls import path
 from . import views # <-- Importa as views do arquivo views.py desta aplicação
@@ -209,6 +210,7 @@ from . import views # <-- Importa as views do arquivo views.py desta aplicação
 urlpatterns = [
     path('', views.home_view, name='home'), # Mapeia a URL raiz desta aplicação ('' ) para a função home_view
 ]
+```
 
 ### 9. Inclusão das URLs da Aplicação no Projeto Principal
 
