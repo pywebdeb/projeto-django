@@ -158,6 +158,7 @@ cd templates
 
 Edite o arquivo meu_projeto_web/templates/meu_primeiro_html.html com o seguinte conteúdo:
 
+```bash
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -171,6 +172,7 @@ Edite o arquivo meu_projeto_web/templates/meu_primeiro_html.html com o seguinte 
     <p>A data e hora atuais são: {{ data_e_hora }}</p>
 </body>
 </html>
+```
 
 ### 7. Criação da View
 
