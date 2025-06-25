@@ -180,6 +180,7 @@ Defina uma função de view em sua aplicação (minha_app/views.py) que processa
 
 Abra o arquivo minha_app/views.py e adicione o código:
 
+```bash
 # minha_app/views.py
 from django.shortcuts import render
 from datetime import datetime
@@ -192,6 +193,7 @@ def home_view(request):
         'data_e_hora': datetime.now() # Variável Python que será acessível no template HTML
     }
     return render(request, 'meu_primeiro_html.html', context) # Renderiza o template especificado
+```
 
 ### 8. Configuração das URLs da Aplicação
 
