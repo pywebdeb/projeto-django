@@ -56,9 +56,12 @@ Siga os passos abaixo para configurar e executar o projeto.
 ```bash
 # Cria um ambiente virtual chamado 'venv'
 python -m venv venv
+```
 
+```bash
 # Ativa o ambiente virtual
 .\venv_django\Scripts\activate
+```
 
 ### 2. Criação do Projeto Django
 
@@ -82,6 +85,7 @@ python manage.py startapp minha_app
 
 Estrutura após a criação da aplicação (minha_app):
 
+```bash
 meu_projeto_web/
 ├── meu_projeto_web/
 │   ├── ... (arquivos do projeto)
@@ -94,6 +98,7 @@ meu_projeto_web/
 │   ├── tests.py        # Onde você escreve os testes automatizados para a aplicação
 │   └── views.py        # Contém as funções/classes que processam requisições e retornam respostas
 └── manage.py
+```
 
 ### 4. Registro da Aplicação
 
@@ -103,6 +108,7 @@ Abra o arquivo meu_projeto_web/settings.py e adicione 'minha_app' à lista INSTA
 
 # meu_projeto_web/settings.py
 
+```bash
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -112,6 +118,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'minha_app',  # <-- Adicione esta linha para registrar sua aplicação
 ]
+```
 
 ### 5. Configuração do Diretório de Templates
 
@@ -123,6 +130,7 @@ No mesmo meu_projeto_web/settings.py, adicione ou modifique a configuração DIR
 
 import os # <-- Certifique-se que esta linha esteja no topo do arquivo se não estiver
 
+```bash
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -138,6 +146,7 @@ TEMPLATES = [
         },
     },
 ]
+```
 
 ### 6. Criação do Template HTML
 
